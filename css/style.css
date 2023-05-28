@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: 'Montserrat';
+    overflow-x: hidden;
 }
 
 header {
@@ -37,7 +41,7 @@ header {
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 13px;
-    padding-bottom: 37px;
+    padding-bottom: 36px;
     padding-top: 50px;
 }
 
@@ -52,7 +56,6 @@ header {
     background-position: top;
     background-size: cover;
     overflow:hidden;
-    margin-bottom: 500px;
 }
 
 .banner .slides {
@@ -141,4 +144,222 @@ header {
     background-color: #b28756;
 }
 
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.default .default-title, .default-subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .default-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.default .default-subtitle {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.default .default-body {
+    margin: auto;
+    max-width: 1140px;
+}
+
+.default.light {
+    background-color: #f7f7f7;
+}
+
+.default.light .default-title,.default.light .default-body {
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+
+.default.dark .default-title, .default-body {
+    color: #fff;
+}
+
+
+/*CSS AREAS ESPECIFICAS*/
+
+.section-aboutus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-aboutus--left {
+    flex:1;
+}
+
+.section-aboutus--left p {
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.section-aboutus--left button {
+    margin-top: 35px;
+    height: 40px;
+    width: 200px;
+    background-color: #b28756;
+    border: 0;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.section-aboutus--left button:hover {
+    background-color: #a77e4f;
+}
+
+.section-aboutus--right {
+    width: 500px;
+    margin-left: 30px;
+}
+
+.section-aboutus--right img {
+    height: 300px;
+    width: 100%;
+    box-shadow: 0px 0px 20px black;
+    cursor: pointer;
+}
+
+.section-services {
+    display: flex;
+    align-items: center;
+}
+
+.section-service {
+    text-transform: uppercase;
+    border-right: 1px solid #cccccc42;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.section-service img {
+    margin-bottom: 30px;
+}
+
+.section-service h2 {
+    font-size: 20px;
+}
+
+
+.section-service p {
+    font-size: 10px;
+    color: #ccc;
+    padding: 10px;
+}
+
+.section-service:first-child{
+    border-left: 1px solid #cccccc42;
+}
+
+.section-projects--filters ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 26px;
+    background-color: #a77e4f1e;
+    list-style-type: none;
+    border: 1px solid #ccc;
+    width: 700px;
+    margin: auto;
+    text-transform: uppercase;
+}
+ .section-projects--filters li {
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 20px;
+ }
+
+ .section-projects--filters li:hover {
+    background-color: #a77e4f50;
+    border-radius: 25px;
+ }
+
+ .section-projects--filters .filters-active {
+    background-color: #a77e4f50;
+    border-radius: 25px;
+ }
+
+ .section-projects--photos {
+    width: 100vw;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+ }
+
+.section-projects--photo {
+    width: 280px;
+}
+
+.section-projects--photoarea{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+}
+
+.section-projects--photoinfo {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-transform: uppercase;
+}
+
+.section-projects--photoinfo h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.section-projects--photoinfo p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo {
+    display: flex;
+    cursor: pointer;
+}
+
+.section-projects--photos button {
+    height: 45px;
+    width: 200px;
+    background-color: #b28756;
+    border: 0;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.section-projects--photos button:hover {
+    background-color: #a77e4f;
+}
