@@ -122,14 +122,14 @@ header {
 .banner .pass-slides {
     display: flex;
     justify-content: space-between;
-    width: 50px;
+    width: 70px;
     position: absolute;
     margin-top: 900px;
 }
 
 .banner .pass-1, .pass-2, .pass-3 {
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     background-color: transparent;
     border: 2px solid #b28756;
@@ -284,6 +284,7 @@ header {
     font-size: 14px;
     cursor: pointer;
     padding: 20px;
+    transition: all 0.05s ease-in-out;
  }
 
  .section-projects--filters li:hover {
@@ -361,5 +362,90 @@ header {
 }
 
 .section-projects--photos button:hover {
+    background-color: #a77e4f;
+}
+
+.bg-team {
+    background-image: url(../imgs/complementos/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.section-bg-team {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-team {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1140px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.team-people {
+    background-color: white;
+    color: black;
+    padding: 80px;
+    text-align: center;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.team-people h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-people img {
+    margin-bottom: 40px;
+}
+
+.icons-team img {
+    margin-top: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.team-people .icons-team img {
+    background-color: #80736481;
+    padding: 10px;
+    border-radius: 15px;
+    height: 32px;
+    width: 35px;
+    object-fit: contain;
+}
+
+.team-people .icons-team img:hover {
+    background-color: #b28756;
+}
+
+.pass-slides-team {
+    display: flex;
+    margin: auto;
+    width: 80px;
+    margin-top: 100px;
+}
+
+.pass-slides-team .pass-team {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #b28756;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.pass-slides-team .pass-team:hover {
+    background-color: #a77e4f;
+}
+
+.pass-team:first-child {
     background-color: #a77e4f;
 }
